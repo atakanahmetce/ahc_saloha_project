@@ -17,8 +17,8 @@ def main():
     # print(tmp_neighbours)
     # print(topo.allpairs_shortest_path)
 
-    # bytes = [8, 16, 32, 64, 128]
-    bytes = [8]
+    bytes = [8, 16, 32, 64, 128]
+    # bytes = [8]
     measurements = {}
 
     for node in range(number_of_nodes):
@@ -29,6 +29,15 @@ def main():
                 for i in range(20):
                     topo.nodes[node].send_message(neighbour, "x" * b)
                 end = time.time()
+                measurements.append(
+                    {
+                        "node": node,
+                        "neighbour": neighbour,
+                        "bytes_send": b,
+                        "time": end - start,
+                    }
+                )
+                """
                 print(
                     node,
                     "#",
@@ -37,7 +46,8 @@ def main():
                     b,
                     " bytes of 20 packets send in " + str(end - start) + " seconds!",
                 )
-
+                """
+    time.sleep(3)
     print("######################################")
     for node in topo.nodes.values():
         print(node.application.identifier, " stats")
