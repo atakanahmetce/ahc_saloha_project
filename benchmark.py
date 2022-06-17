@@ -19,7 +19,7 @@ def main():
 
     bytes = [8, 16, 32, 64, 128]
     # bytes = [8]
-    measurements = {}
+    measurements = []
 
     for node in range(number_of_nodes):
         tmp_neighbours = topo.get_neighbors(node)
