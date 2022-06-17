@@ -47,7 +47,7 @@ def main():
                     " bytes of 20 packets send in " + str(end - start) + " seconds!",
                 )
                 """
-    time.sleep(3)
+    time.sleep(10)
     print("######################################")
     for node in topo.nodes.values():
         print(node.application.identifier, " stats")
