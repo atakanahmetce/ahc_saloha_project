@@ -63,6 +63,8 @@ class SAlohaAppLayer(GenericModel):
       ack_msg = GenericMessage(ack_header, "ok       ")
       self.send_self(Event(self, SAlohaAppLayerEventTypes.SENDACK, ack_msg))
 
+      print(payload)
+
       # increase number of received packets from spesific node
       if source in self.received_packets:
         self.received_packets[source] += 1

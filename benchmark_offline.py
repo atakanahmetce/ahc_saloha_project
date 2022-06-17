@@ -3,8 +3,6 @@ from adhoccomputing.Experimentation.Topology import Topology
 from adhoccomputing.Networking.LogicalChannels.GenericChannel import GenericChannel
 from node_model.generic_node import GenericNode
 
-from adhoccomputing.Networking.MacProtocol.GenericMAC
-
 def main():
   number_of_nodes = 4
   topo = Topology()
