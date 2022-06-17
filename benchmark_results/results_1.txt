@@ -1,0 +1,93 @@
+######################################
+node#0  stats
+**************************************
+received packets:  {3: 100, 2: 100, 1: 68}
+sent     ack    :  {3: 100, 2: 100, 1: 67}
+--------------------------------------
+sent     packets:  {1: 100, 2: 100, 3: 100}
+received ack    :  {}
+######################################
+node#1  stats
+**************************************
+received packets:  {2: 100, 0: 100, 3: 100}
+sent     ack    :  {2: 100, 0: 100, 3: 100}
+--------------------------------------
+sent     packets:  {0: 100, 2: 100, 3: 100}
+received ack    :  {2: 100, 3: 100}
+######################################
+node#2  stats
+**************************************
+received packets:  {3: 100, 0: 100, 1: 100}
+sent     ack    :  {3: 100, 0: 100, 1: 100}
+--------------------------------------
+sent     packets:  {0: 100, 1: 100, 3: 100}
+received ack    :  {1: 100, 3: 100}
+######################################
+node#3  stats
+**************************************
+received packets:  {2: 100, 0: 100, 1: 100}
+sent     ack    :  {2: 100, 0: 100, 1: 100}
+--------------------------------------
+sent     packets:  {0: 100, 1: 100, 2: 100}
+received ack    :  {2: 100, 0: 63, 1: 100}
+######################################
+{'node': 0, 'neighbour': 1, 'bytes_send': 8, 'time': 0.00012087821960449219}
+{'node': 0, 'neighbour': 1, 'bytes_send': 16, 'time': 0.00010347366333007812}
+{'node': 0, 'neighbour': 1, 'bytes_send': 32, 'time': 0.0001068115234375}
+{'node': 0, 'neighbour': 1, 'bytes_send': 64, 'time': 0.00010132789611816406}
+{'node': 0, 'neighbour': 1, 'bytes_send': 128, 'time': 0.0006442070007324219}
+{'node': 0, 'neighbour': 2, 'bytes_send': 8, 'time': 0.00010275840759277344}U
+{'node': 0, 'neighbour': 2, 'bytes_send': 16, 'time': 0.00010395050048828125}U
+{'node': 0, 'neighbour': 2, 'bytes_send': 32, 'time': 0.00010275840759277344}
+{'node': 0, 'neighbour': 2, 'bytes_send': 64, 'time': 0.00010180473327636719}
+{'node': 0, 'neighbour': 2, 'bytes_send': 128, 'time': 0.00010204315185546875}
+{'node': 0, 'neighbour': 3, 'bytes_send': 8, 'time': 0.00013017654418945312}
+{'node': 0, 'neighbour': 3, 'bytes_send': 16, 'time': 0.00010037422180175781}
+{'node': 0, 'neighbour': 3, 'bytes_send': 32, 'time': 0.00010466575622558594}
+{'node': 0, 'neighbour': 3, 'bytes_send': 64, 'time': 0.00010418891906738281}
+{'node': 0, 'neighbour': 3, 'bytes_send': 128, 'time': 0.0001049041748046875}
+{'node': 1, 'neighbour': 0, 'bytes_send': 8, 'time': 0.00010395050048828125}
+{'node': 1, 'neighbour': 0, 'bytes_send': 16, 'time': 0.00012969970703125}
+{'node': 1, 'neighbour': 0, 'bytes_send': 32, 'time': 0.00010228157043457031}
+{'node': 1, 'neighbour': 0, 'bytes_send': 64, 'time': 0.00010061264038085938}
+{'node': 1, 'neighbour': 0, 'bytes_send': 128, 'time': 0.00010585784912109375}
+{'node': 1, 'neighbour': 2, 'bytes_send': 8, 'time': 0.00010085105895996094}
+{'node': 1, 'neighbour': 2, 'bytes_send': 16, 'time': 0.00010585784912109375}
+{'node': 1, 'neighbour': 2, 'bytes_send': 32, 'time': 0.00013208389282226562}
+{'node': 1, 'neighbour': 2, 'bytes_send': 64, 'time': 0.00010371208190917969}
+{'node': 1, 'neighbour': 2, 'bytes_send': 128, 'time': 0.00010085105895996094}
+{'node': 1, 'neighbour': 3, 'bytes_send': 8, 'time': 0.00010466575622558594}
+{'node': 1, 'neighbour': 3, 'bytes_send': 16, 'time': 0.00010061264038085938}
+{'node': 1, 'neighbour': 3, 'bytes_send': 32, 'time': 0.00012993812561035156}
+{'node': 1, 'neighbour': 3, 'bytes_send': 64, 'time': 0.00010323524475097656}
+{'node': 1, 'neighbour': 3, 'bytes_send': 128, 'time': 0.00010347366333007812}
+{'node': 2, 'neighbour': 0, 'bytes_send': 8, 'time': 0.00010704994201660156}
+{'node': 2, 'neighbour': 0, 'bytes_send': 16, 'time': 0.000102996826171875}
+{'node': 2, 'neighbour': 0, 'bytes_send': 32, 'time': 0.00010156631469726562}
+{'node': 2, 'neighbour': 0, 'bytes_send': 64, 'time': 0.0001289844512939453}
+{'node': 2, 'neighbour': 0, 'bytes_send': 128, 'time': 0.00010585784912109375}
+{'node': 2, 'neighbour': 1, 'bytes_send': 8, 'time': 0.00350189208984375}
+{'node': 2, 'neighbour': 1, 'bytes_send': 16, 'time': 0.0001068115234375}
+{'node': 2, 'neighbour': 1, 'bytes_send': 32, 'time': 0.00010776519775390625}
+{'node': 2, 'neighbour': 1, 'bytes_send': 64, 'time': 0.00010037422180175781}
+{'node': 2, 'neighbour': 1, 'bytes_send': 128, 'time': 0.0002167224884033203}
+{'node': 2, 'neighbour': 3, 'bytes_send': 8, 'time': 0.00010132789611816406}
+{'node': 2, 'neighbour': 3, 'bytes_send': 16, 'time': 0.00010085105895996094}
+{'node': 2, 'neighbour': 3, 'bytes_send': 32, 'time': 9.942054748535156e-05}
+{'node': 2, 'neighbour': 3, 'bytes_send': 64, 'time': 0.00010275840759277344}
+{'node': 2, 'neighbour': 3, 'bytes_send': 128, 'time': 0.00010013580322265625}U
+{'node': 3, 'neighbour': 0, 'bytes_send': 8, 'time': 0.00013709068298339844}U
+{'node': 3, 'neighbour': 0, 'bytes_send': 16, 'time': 0.00010585784912109375}
+{'node': 3, 'neighbour': 0, 'bytes_send': 32, 'time': 0.00010013580322265625}
+{'node': 3, 'neighbour': 0, 'bytes_send': 64, 'time': 9.965896606445312e-05}
+{'node': 3, 'neighbour': 0, 'bytes_send': 128, 'time': 0.000102996826171875}
+{'node': 3, 'neighbour': 1, 'bytes_send': 8, 'time': 0.0001323223114013672}
+{'node': 3, 'neighbour': 1, 'bytes_send': 16, 'time': 0.0001068115234375}
+{'node': 3, 'neighbour': 1, 'bytes_send': 32, 'time': 9.894371032714844e-05}
+{'node': 3, 'neighbour': 1, 'bytes_send': 64, 'time': 9.965896606445312e-05}
+{'node': 3, 'neighbour': 1, 'bytes_send': 128, 'time': 0.00010466575622558594}
+{'node': 3, 'neighbour': 2, 'bytes_send': 8, 'time': 9.870529174804688e-05}
+{'node': 3, 'neighbour': 2, 'bytes_send': 16, 'time': 0.0001246929168701172}U
+{'node': 3, 'neighbour': 2, 'bytes_send': 32, 'time': 9.846687316894531e-05}
+{'node': 3, 'neighbour': 2, 'bytes_send': 64, 'time': 9.870529174804688e-05}U
+{'node': 3, 'neighbour': 2, 'bytes_send': 128, 'time': 9.870529174804688e-05}
