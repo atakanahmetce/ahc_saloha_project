@@ -45,9 +45,6 @@ def main():
         print("received ack    : ", node.application.received_ack)
         print("######################################")
 
-    for m in measurements:
-        print(m)
-
 
 if __name__ == "__main__":
     main()
