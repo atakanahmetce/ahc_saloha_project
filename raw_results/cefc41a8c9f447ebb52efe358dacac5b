@@ -1,0 +1,4046 @@
+[SYSTEM] Run: run1
+[SYSTEM] Sampling Sequence: 0
+
+Collecting adhoccomputing==2.1.1
+  Downloading adhoccomputing-2.1.1-py3-none-any.whl (121 kB)
+[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/121.2 KB[0m [31m?[0m eta [36m-:--:--[0m[2K     [91m━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m41.0/121.2 KB[0m [31m1.1 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━[0m [32m71.7/121.2 KB[0m [31m1.0 MB/s[0m eta [36m0:00:01[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m121.2/121.2 KB[0m [31m1.3 MB/s[0m eta [36m0:00:00[0m
+[?25hRequirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from adhoccomputing==2.1.1) (3.5.1)
+Requirement already satisfied: networkx in /usr/local/lib/python3.10/dist-packages (from adhoccomputing==2.1.1) (2.8.2)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from adhoccomputing==2.1.1) (59.6.0)
+Installing collected packages: adhoccomputing
+Successfully installed adhoccomputing-2.1.1
+[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m[33m
+[0mnode#0  constructed in init
+Configuring type=b200,devicename=winslab_b210_0, freq=2162000000.0, bandwidth=1000000, channel=0, hw_tx_gain=50.0, hw_rx_gain=20.0
+[0;32m[INFO] [UHD] [0;39mlinux; GNU C++ version 11.2.0; Boost_107400; DPDK_21.11; UHD_4.2.0.HEAD-release
+[0;32m[INFO] [B200] [0;39mDetected Device: B210
+[0;32m[INFO] [B200] [0;39mOperating over USB 3.
+[0;32m[INFO] [B200] [0;39mInitialize CODEC control...
+[0;32m[INFO] [B200] [0;39mInitialize Radio control...
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mSetting master clock rate selection to 'automatic'.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 16.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 16.000000 MHz.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 32.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 32.000000 MHz.
+Configuring winslab_b210_0
+ofdmflexframegen:
+    num subcarriers     :   512
+      * NULL            :   104
+      * pilot           :   52
+      * data            :   356
+    cyclic prefix len   :   64
+    taper len           :   64
+    properties:
+      * mod scheme      :   quaternary phase-shift keying
+      * fec (inner)     :   none
+      * fec (outer)     :   Hamming(7,4)
+      * CRC scheme      :   CRC (32-bit)
+    frame assembled     :   no
+fs <adhoccomputing.Networking.PhysicalLayer.LiquidDspUtils.LP_struct_ofdmflexframesync_s object at 0x7f18fc666040> 139745280208960
+start_rx on usrp winslab_b210_0
+rx_thread on usrp winslab_b210_0
+I am Generic MAC my uhd instance id is  0
+node#1  constructed in init
+Configuring type=b200,devicename=winslab_b210_1, freq=2162000000.0, bandwidth=1000000, channel=0, hw_tx_gain=50.0, hw_rx_gain=20.0
+[0;32m[INFO] [B200] [0;39mDetected Device: B210
+[0;32m[INFO] [B200] [0;39mOperating over USB 2.
+[0;32m[INFO] [B200] [0;39mInitialize CODEC control...
+[0;32m[INFO] [B200] [0;39mInitialize Radio control...
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mSetting master clock rate selection to 'automatic'.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 16.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 16.000000 MHz.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 32.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 32.000000 MHz.
+Configuring winslab_b210_1
+ofdmflexframegen:
+    num subcarriers     :   512
+      * NULL            :   104
+      * pilot           :   52
+      * data            :   356
+    cyclic prefix len   :   64
+    taper len           :   64
+    properties:
+      * mod scheme      :   quaternary phase-shift keying
+      * fec (inner)     :   none
+      * fec (outer)     :   Hamming(7,4)
+      * CRC scheme      :   CRC (32-bit)
+    frame assembled     :   no
+fs <adhoccomputing.Networking.PhysicalLayer.LiquidDspUtils.LP_struct_ofdmflexframesync_s object at 0x7f18fc2e42c0> 139745280345040
+start_rx on usrp winslab_b210_1
+rx_thread on usrp winslab_b210_1
+I am Generic MAC my uhd instance id is  1
+node#2  constructed in init
+Configuring type=b200,devicename=winslab_b210_2, freq=2162000000.0, bandwidth=1000000, channel=0, hw_tx_gain=50.0, hw_rx_gain=20.0
+[0;32m[INFO] [B200] [0;39mDetected Device: B210
+[0;32m[INFO] [B200] [0;39mOperating over USB 2.
+[0;32m[INFO] [B200] [0;39mInitialize CODEC control...
+[0;32m[INFO] [B200] [0;39mInitialize Radio control...
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mSetting master clock rate selection to 'automatic'.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 16.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 16.000000 MHz.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 32.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 32.000000 MHz.
+Configuring winslab_b210_2
+ofdmflexframegen:
+    num subcarriers     :   512
+      * NULL            :   104
+      * pilot           :   52
+      * data            :   356
+    cyclic prefix len   :   64
+    taper len           :   64
+    properties:
+      * mod scheme      :   quaternary phase-shift keying
+      * fec (inner)     :   none
+      * fec (outer)     :   Hamming(7,4)
+      * CRC scheme      :   CRC (32-bit)
+    frame assembled     :   no
+fs <adhoccomputing.Networking.PhysicalLayer.LiquidDspUtils.LP_struct_ofdmflexframesync_s object at 0x7f18fc2e4cc0> 139745280349936
+start_rx on usrp winslab_b210_2
+rx_thread on usrp winslab_b210_2
+I am Generic MAC my uhd instance id is  2
+node#3  constructed in init
+Configuring type=b200,devicename=winslab_b210_3, freq=2162000000.0, bandwidth=1000000, channel=0, hw_tx_gain=50.0, hw_rx_gain=20.0
+[0;32m[INFO] [B200] [0;39mDetected Device: B210
+[0;32m[INFO] [B200] [0;39mOperating over USB 3.
+[0;32m[INFO] [B200] [0;39mInitialize CODEC control...
+[0;32m[INFO] [B200] [0;39mInitialize Radio control...
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mPerforming register loopback test... 
+[0;32m[INFO] [B200] [0;39mRegister loopback test passed
+[0;32m[INFO] [B200] [0;39mSetting master clock rate selection to 'automatic'.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 16.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 16.000000 MHz.
+[0;32m[INFO] [B200] [0;39mAsking for clock rate 32.000000 MHz... 
+[0;32m[INFO] [B200] [0;39mActually got clock rate 32.000000 MHz.
+Configuring winslab_b210_3
+ofdmflexframegen:
+    num subcarriers     :   512
+      * NULL            :   104
+      * pilot           :   52
+      * data            :   356
+    cyclic prefix len   :   64
+    taper len           :   64
+    properties:
+      * mod scheme      :   quaternary phase-shift keying
+      * fec (inner)     :   none
+      * fec (outer)     :   Hamming(7,4)
+      * CRC scheme      :   CRC (32-bit)
+    frame assembled     :   no
+fs <adhoccomputing.Networking.PhysicalLayer.LiquidDspUtils.LP_struct_ofdmflexframesync_s object at 0x7f18fc2e4dc0> 139745280354880
+start_rx on usrp winslab_b210_3
+rx_thread on usrp winslab_b210_3
+I am Generic MAC my uhd instance id is  3
+Pairs [(0, 1), (0, 2), (0, 3), (1, 0), (1, 2), (1, 3), (2, 0), (2, 1), (2, 3), (3, 0), (3, 1), (3, 2)]
+OOEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3OEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+DUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+OEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0D
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+OException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+OEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+Exception in CCA: EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+ ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1D
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+OException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+OEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1Exception in CCA: EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2 ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+OEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0O
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2O
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+Exception in CCA: 
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!D
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2 ERROR! get_usrp_power(): Did not receive the correct number of samples!
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1OEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1O
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0UO
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+OEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+D
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3D
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+Exception in CCA: 
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2 ERROR! get_usrp_power(): Did not receive the correct number of samples!
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1UU
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1OException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2D
+U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1O
+U
+UException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UDException in CCA: EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+U ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UUO
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2Exception in CCA:  
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UDEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1O
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1OException in CCA: DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2 ERROR! get_usrp_power(): Did not receive the correct number of samples!
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+Exception in CCA: 
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+ ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2D
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUOEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UOEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UDU
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2O
+UODEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2D
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+U
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UO
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+D
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.3
+UU
+UUUUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UUU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UUOUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1OException in CCA: 
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+U ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUDEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UO
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2Exception in CCA:  
+ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UUUU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UUU
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UOException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+D
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UUU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+Exception in CCA: 
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+U ERROR! get_usrp_power(): Did not receive the correct number of samples!
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2UO
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+DUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.2
+UUUUUOUODException in CCA: U DUERROR! get_usrp_power(): Did not receive the correct number of samples!U
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UUUUUUUUUUUUUUUUUUUUUOUUException in CCA: U ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UUDUUUUUUUUUUUUUUUUUUUUUOOUUUUUDException in CCA:  Exception in CCA:  UUUERROR! get_usrp_power(): Did not receive the correct number of samples!
+ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DUUOUUUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+UUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UOUUUUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!U
+UUDUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUOException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UUUDUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UUUUODUUUUUUUUUUUUUUUUUUUUOUDUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1UU
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UUUUUOException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+Exception in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DUUUOUUUUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DUUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UUUUUUUUUUUUUUUUUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+UUUUUUUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+UUUUUUUUUUUUUUUUUUUUUUOUUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UUUUDUUUUUUOUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UUUDUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUOUUDUUEventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+UUUUUUUUUUUUUUUUUUUU######################################
+node#0  statsUOU
+**************************************
+received packets:  {3: 100, 2: 100, 1: 68}
+UUsent     ack    :  {3: 100, 2: 100, 1: 67}
+--------------------------------------
+sent     packets:  {1: 100, 2: 100, 3: 100}
+UException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UDUreceived ack    :  {}
+######################################
+node#1 UEventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+ stats
+**************************************
+received packets: EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.0
+ UU{2: 100, 0: 100, 3: 100}
+sent     ack    :  {2: 100, 0: 100, 3: 100}
+U--------------------------------------
+sent     packets:  {0: 100, 2: 100, 3: 100}
+received ack    :  {2: 100, 3: 100}
+######################################U
+UUnode#2  stats
+**************************************
+received packets:  {3: 100, 0: 100, 1: 100}
+Usent     ack    :  UUUU{3: 100, 0: 100, 1: 100}
+--------------------------------------
+sent     packets: U U{0: 100, 1: 100, 3: 100}U
+Ureceived ack    :  {1: 100, 3: 100}
+######################################
+node#3 UUU stats
+**************************************
+received packets:  UU{2: 100, 0: 100, 1: 100}
+sent     ack    :  {2: 100, 0: 100, 1: 100}
+--------------------------------------
+sent     packets:  {0: 100, 1: 100, 2: 100}
+received ack    :  {2: 100, 0: 63, 1: 100}
+######################################UU
+U{'node': 0, 'neighbour': 1, 'bytes_send': 8, 'time': 0.00012087821960449219}
+{'node': 0, 'neighbour': 1, 'bytes_send': 16, 'time': 0.00010347366333007812}
+{'node': 0, 'neighbour': 1, 'bytes_send': 32, 'time': 0.0001068115234375}
+{'node': 0, 'neighbour': 1, 'bytes_send': 64, 'time': 0.00010132789611816406}
+{'node': 0, 'neighbour': 1, 'bytes_send': 128, 'time': 0.0006442070007324219}
+{'node': 0, 'neighbour': 2, 'bytes_send': 8, 'time': 0.00010275840759277344}U
+UUU{'node': 0, 'neighbour': 2, 'bytes_send': 16, 'time': 0.00010395050048828125}U
+UUO{'node': 0, 'neighbour': 2, 'bytes_send': 32, 'time': 0.00010275840759277344}
+Exception in CCA: UUU{'node': 0, 'neighbour': 2, 'bytes_send': 64, 'time': 0.00010180473327636719}
+{'node': 0, 'neighbour': 2, 'bytes_send': 128, 'time': 0.00010204315185546875}
+{'node': 0, 'neighbour': 3, 'bytes_send': 8, 'time': 0.00013017654418945312}
+{'node': 0, 'neighbour': 3, 'bytes_send': 16, 'time': 0.00010037422180175781}
+{'node': 0, 'neighbour': 3, 'bytes_send': 32, 'time': 0.00010466575622558594}
+{'node': 0, 'neighbour': 3, 'bytes_send': 64, 'time': 0.00010418891906738281}
+ ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UU{'node': 0, 'neighbour': 3, 'bytes_send': 128, 'time': 0.0001049041748046875}
+{'node': 1, 'neighbour': 0, 'bytes_send': 8, 'time': 0.00010395050048828125}
+{'node': 1, 'neighbour': 0, 'bytes_send': 16, 'time': 0.00012969970703125}
+{'node': 1, 'neighbour': 0, 'bytes_send': 32, 'time': 0.00010228157043457031}
+DUU{'node': 1, 'neighbour': 0, 'bytes_send': 64, 'time': 0.00010061264038085938}
+{'node': 1, 'neighbour': 0, 'bytes_send': 128, 'time': 0.00010585784912109375}
+{'node': 1, 'neighbour': 2, 'bytes_send': 8, 'time': 0.00010085105895996094}
+{'node': 1, 'neighbour': 2, 'bytes_send': 16, 'time': 0.00010585784912109375}
+{'node': 1, 'neighbour': 2, 'bytes_send': 32, 'time': 0.00013208389282226562}
+{'node': 1, 'neighbour': 2, 'bytes_send': 64, 'time': 0.00010371208190917969}
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1UUU
+{'node': 1, 'neighbour': 2, 'bytes_send': 128, 'time': 0.00010085105895996094}
+{'node': 1, 'neighbour': 3, 'bytes_send': 8, 'time': 0.00010466575622558594}
+{'node': 1, 'neighbour': 3, 'bytes_send': 16, 'time': 0.00010061264038085938}
+{'node': 1, 'neighbour': 3, 'bytes_send': 32, 'time': 0.00012993812561035156}
+{'node': 1, 'neighbour': 3, 'bytes_send': 64, 'time': 0.00010323524475097656}
+{'node': 1, 'neighbour': 3, 'bytes_send': 128, 'time': 0.00010347366333007812}UU
+U{'node': 2, 'neighbour': 0, 'bytes_send': 8, 'time': 0.00010704994201660156}EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1
+
+EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1{'node': 2, 'neighbour': 0, 'bytes_send': 16, 'time': 0.000102996826171875}
+{'node': 2, 'neighbour': 0, 'bytes_send': 32, 'time': 0.00010156631469726562}
+{'node': 2, 'neighbour': 0, 'bytes_send': 64, 'time': 0.0001289844512939453}
+{'node': 2, 'neighbour': 0, 'bytes_send': 128, 'time': 0.00010585784912109375}
+U{'node': 2, 'neighbour': 1, 'bytes_send': 8, 'time': 0.00350189208984375}
+UO
+{'node': 2, 'neighbour': 1, 'bytes_send': 16, 'time': 0.0001068115234375}EventTypes.MFRB UsrpB210OfdmFlexFramePhy.1U
+
+UUU{'node': 2, 'neighbour': 1, 'bytes_send': 32, 'time': 0.00010776519775390625}Exception in CCA: 
+{'node': 2, 'neighbour': 1, 'bytes_send': 64, 'time': 0.00010037422180175781}
+{'node': 2, 'neighbour': 1, 'bytes_send': 128, 'time': 0.0002167224884033203}
+{'node': 2, 'neighbour': 3, 'bytes_send': 8, 'time': 0.00010132789611816406}
+{'node': 2, 'neighbour': 3, 'bytes_send': 16, 'time': 0.00010085105895996094}
+{'node': 2, 'neighbour': 3, 'bytes_send': 32, 'time': 9.942054748535156e-05}
+{'node': 2, 'neighbour': 3, 'bytes_send': 64, 'time': 0.00010275840759277344}
+{'node': 2, 'neighbour': 3, 'bytes_send': 128, 'time': 0.00010013580322265625}U
+{'node': 3, 'neighbour': 0, 'bytes_send': 8, 'time': 0.00013709068298339844}U
+ {'node': 3, 'neighbour': 0, 'bytes_send': 16, 'time': 0.00010585784912109375}ERROR! get_usrp_power(): Did not receive the correct number of samples!
+UUException in CCA:  ERROR! get_usrp_power(): Did not receive the correct number of samples!
+DU
+{'node': 3, 'neighbour': 0, 'bytes_send': 32, 'time': 0.00010013580322265625}
+{'node': 3, 'neighbour': 0, 'bytes_send': 64, 'time': 9.965896606445312e-05}
+{'node': 3, 'neighbour': 0, 'bytes_send': 128, 'time': 0.000102996826171875}
+{'node': 3, 'neighbour': 1, 'bytes_send': 8, 'time': 0.0001323223114013672}
+{'node': 3, 'neighbour': 1, 'bytes_send': 16, 'time': 0.0001068115234375}
+U{'node': 3, 'neighbour': 1, 'bytes_send': 32, 'time': 9.894371032714844e-05}
+{'node': 3, 'neighbour': 1, 'bytes_send': 64, 'time': 9.965896606445312e-05}UU
+UU{'node': 3, 'neighbour': 1, 'bytes_send': 128, 'time': 0.00010466575622558594}UU
+{'node': 3, 'neighbour': 2, 'bytes_send': 8, 'time': 9.870529174804688e-05}
+{'node': 3, 'neighbour': 2, 'bytes_send': 16, 'time': 0.0001246929168701172}U
+{'node': 3, 'neighbour': 2, 'bytes_send': 32, 'time': 9.846687316894531e-05}
+{'node': 3, 'neighbour': 2, 'bytes_send': 64, 'time': 9.870529174804688e-05}U
+UU{'node': 3, 'neighbour': 2, 'bytes_send': 128, 'time': 9.870529174804688e-05}
+Uterminate called without an active exception
+Aborted (core dumped)
